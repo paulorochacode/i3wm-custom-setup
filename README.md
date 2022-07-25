@@ -24,10 +24,10 @@ WIN + SHIT + R
 <h4>sudo apt install ufw -y &&</br>
 sudo ufw default deny && </br>
 sudo apt-get install ufw && </br>
-sudo ufw default deny outgoing &&
-sudo ufw default deny incoming &&
-sudo ufw allow out 80 &&
-sudo ufw allow out 443 &&
+sudo ufw default deny outgoing && </br>
+sudo ufw default deny incoming && </br>
+sudo ufw allow out 80 && </br>
+sudo ufw allow out 443 && </br>
 sudo ufw allow out 53</h4>
 
 <h3></h3>
