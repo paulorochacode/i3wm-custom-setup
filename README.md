@@ -18,7 +18,7 @@ sudo ufw default deny outgoing &&
 sudo ufw default deny incoming &&
 sudo ufw allow out 80 &&
 sudo ufw allow out 443 &&
-sudo ufw allow out 53</h4> &&
+sudo ufw allow out 53</h4>
 
 <h3></h3>
 <h4></h4>
