@@ -10,15 +10,14 @@ sudo apt-get install iptables-persistent -y
 <h3>Update Ubuntu</h3>
 
 <h4>
-sudo apt update -y && sudo apt upgrade -y && sudo apt-get update -y && sudo apt-get upgrade -y</br>
-</br>
+sudo apt update -y && sudo apt upgrade -y && sudo apt-get update -y && sudo apt-get upgrade -y </br>
 </h4></br>
 
 <h3>Clamav</h3>
 
 <h4>
 sudo apt update -y </br>
-sudo apt-get install clamav clamav-daemon -y</br>
+sudo apt-get install clamav clamav-daemon -y </br>
 </h4></br>
 
 <h3>pulseaudio</h3>
