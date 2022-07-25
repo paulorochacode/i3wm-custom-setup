@@ -32,11 +32,11 @@ sudo ufw allow out 53</h4>
 
 <h3>ly</h3>
 <h4>
-sudo apt install build-essential libpam0g-dev libxcb-xkb-dev git &&
-sudo git clone --recurse-submodules https://github.com/nullgemm/ly &&
-cd ly &&
-sudo make &&
-sudo make install &&
-sudo systemctl enable ly.service -f &&
-sudo systemctl disable getty@tty2.service -f &&
+sudo apt install build-essential libpam0g-dev libxcb-xkb-dev git && </br>
+sudo git clone --recurse-submodules https://github.com/nullgemm/ly && </br>
+cd ly && </br>
+sudo make && </br>
+sudo make install && </br>
+sudo systemctl enable ly.service -f && </br>
+sudo systemctl disable getty@tty2.service -f && </br>
 </h4>
