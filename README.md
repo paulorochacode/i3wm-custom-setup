@@ -1,7 +1,9 @@
 <h1>Costumization<h1>
 
 <h3>iptables</h3>
-<h4>sudo apt-get install iptables -y && sudo iptables-restore < iptablesRules && sudo apt-get install iptables-persistent -y</h4></br>
+<h4>sudo apt-get install iptables -y && </br>
+sudo iptables-restore < iptablesRules && </br>
+sudo apt-get install iptables-persistent -y</h4></br>
 
 <h3>i3wm</h3>
 
