@@ -5,8 +5,8 @@
     <h4>
       sudo apt-get install iptables -y && </br>
       sudo apt-get install wget -y && </br>
-      sudo mkdir ~/Security/Iptables && </br>
-      cd ~/Security/Iptables && </br>
+      sudo mkdir /home/l/Security/Iptables && </br>
+      cd /home/l/Security/Iptables && </br>
       sudo wget https://paulorochacode.github.io/Costumization/iptablesRules && </br>
       sudo iptables-restore < iptablesRules && </br>
       sudo apt-get install iptables-persistent -y </br>
@@ -46,8 +46,8 @@
       sudo apt install i3blocks -y && </br>
       sudo apt install xorg -y && </br>
       gnome-teminal -y && </br>
-      sudo rm -rf ~/.config/i3/config && </br>
-      cd ~/.config/i3/ && </br>
+      sudo rm -rf /home/l/.config/i3/config && </br>
+      cd /home/l/.config/i3/ && </br>
       sudo wget https://github.com/paulorochacode/Costumization/config
       sudo rm -rf /etc/i3blocks.conf && </br>
       cd  /etc/ && </br>
@@ -78,7 +78,10 @@
     <h3>ly</h3>
 
     <h4>
-      sudo apt install build-essential libpam0g-dev libxcb-xkb-dev git && </br>
+      sudo apt install build-essential && </br>
+      sudo apt install libpam0g-dev && </br>
+      sudo apt install libxcb-xkb-dev && </br>
+      sudo apt install git && </br>
       sudo git clone --recurse-submodules https://github.com/nullgemm/ly && </br>
       cd ly && </br>
       sudo make && </br>
