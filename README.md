@@ -1,1 +1,2 @@
 Ubuntu costumization
+./installCustom.sh
