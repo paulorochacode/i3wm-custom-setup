@@ -17,7 +17,7 @@ cd /home/l/.config </br>
 sudo rm -rf /etc/i3blocks.conf && </br>
 cd  /etc/ </br>
 !Download the i3blocks.conf! </br>
-WIN + SHIT + R
+WIN + SHIFT + R
 </h4></br>
 
 <h3>UFW</h3>
