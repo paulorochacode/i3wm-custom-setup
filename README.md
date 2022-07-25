@@ -7,6 +7,15 @@ sudo iptables-restore < iptablesRules && </br>
 sudo apt-get install iptables-persistent -y
 </h4></br>
 
+<h3>pulseaudio</h3>
+
+<h4>
+sudo apt remove pipewire* --purge && </br>
+sudo apt remove alsa* --purge && </br>
+sudo apt install pulseaudio && </br>
+sudo reboot </br>
+</h4>
+
 <h3>i3wm</h3>
 
 <h4>
@@ -21,6 +30,7 @@ WIN + SHIFT + R
 </h4></br>
 
 <h3>UFW</h3>
+
 <h4>sudo apt install ufw -y &&</br>
 sudo ufw default deny && </br>
 sudo apt-get install ufw && </br>
@@ -31,6 +41,7 @@ sudo ufw allow out 443 && </br>
 sudo ufw allow out 53</h4>
 
 <h3>ly</h3>
+
 <h4>
 sudo apt install build-essential libpam0g-dev libxcb-xkb-dev git && </br>
 sudo git clone --recurse-submodules https://github.com/nullgemm/ly && </br>
@@ -39,4 +50,9 @@ sudo make && </br>
 sudo make install && </br>
 sudo systemctl enable ly.service -f && </br>
 sudo systemctl disable getty@tty2.service -f && </br>
-</h4>
+
+<h3>grub text mode</h3>
+
+sudo nano /etc/default/grub </br>
+!Change : "GRUB_CMDLINE_LINUX_DEFAULT=""text"! </br>
+sudo update-grub </br>
