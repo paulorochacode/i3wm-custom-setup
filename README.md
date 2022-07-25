@@ -13,8 +13,8 @@ sudo apt-get install iptables-persistent -y
 sudo apt remove pipewire* --purge && </br>
 sudo apt remove alsa* --purge && </br>
 sudo apt install pulseaudio && </br>
-sudo reboot </br>
-</h4>
+sudo reboot
+</h4></br>
 
 <h3>i3wm</h3>
 
@@ -38,7 +38,8 @@ sudo ufw default deny outgoing && </br>
 sudo ufw default deny incoming && </br>
 sudo ufw allow out 80 && </br>
 sudo ufw allow out 443 && </br>
-sudo ufw allow out 53</h4>
+sudo ufw allow out 53
+</h4></br>
 
 <h3>ly</h3>
 
@@ -49,10 +50,13 @@ cd ly && </br>
 sudo make && </br>
 sudo make install && </br>
 sudo systemctl enable ly.service -f && </br>
-sudo systemctl disable getty@tty2.service -f && </br>
+sudo systemctl disable getty@tty2.service -f
+</h4></br>
 
 <h3>grub text mode</h3>
 
+<h4>
 sudo nano /etc/default/grub </br>
 !Change : "GRUB_CMDLINE_LINUX_DEFAULT=""text"! </br>
-sudo update-grub </br>
+sudo update-grub
+<h4></br>
