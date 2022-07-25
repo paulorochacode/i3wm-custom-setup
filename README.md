@@ -19,7 +19,7 @@ sudo reboot </br>
 <h3>i3wm</h3>
 
 <h4>
-sudo apt install i3 i3blocks -y && </br>
+sudo apt install i3 i3blocks xorg gnome-teminal -y && </br>
 sudo rm -rf /home/l/.config/config && </br>
 cd /home/l/.config </br>
 !Dowload the config! </br>
