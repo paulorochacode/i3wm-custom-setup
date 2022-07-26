@@ -1,10 +1,10 @@
 Ubuntu costumization: </br>
 
-wget </br>
+wget https://paulorochacode.github.io/Costumization/vm-install-custom.sh</br>
 chmod a+x ./vm-install-custom.sh</br>
 ./vm-install-custom.sh</br>
 
-wget </br>
+wget https://paulorochacode.github.io/Costumization/install-custom.sh</br>
 chmod a+x ./install-custom.sh</br>
 ./install-custom.sh</br>
 
