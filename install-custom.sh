@@ -50,7 +50,7 @@ sudo rm -rf i3blocks.zip &&
 sudo wget https://paulorochacode.github.io/Costumization/config &&
 sudo rm -rf /etc/i3blocks.conf &&
 cd /etc/ &&
-sudo wget https://paulorochacode.github.io/Costumization/VMi3blocks.conf/i3blocks.conf &&
+sudo wget https://paulorochacode.github.io/Costumization/i3blocks.conf &&
 sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
 mv fsociety.jpg /usr/share/pixmaps/fsociety.jpg &&
 sudo feh  --bg-scale /usr/share/pixmaps/fsociety.jpg && 
