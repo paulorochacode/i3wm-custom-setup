@@ -56,7 +56,7 @@ mv fsociety.jpg /usr/share/pixmaps/fsociety.jpg &&
 sudo feh  --bg-scale /usr/share/pixmaps/fsociety.jpg && 
 sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
 mv fsociety.jpg /usr/share/pixmaps/fsociety.jpg &&
-sudo feh  --bg-scale /usr/share/pixmaps/fsociety.jpg
+sudo feh  --bg-scale /usr/share/pixmaps/fsociety.jpg &&
 
 ## Utilities
 
