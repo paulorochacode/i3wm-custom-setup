@@ -39,18 +39,24 @@ echo "installing Video..."
 sudo apt install i3 -y &&
 sudo apt install i3blocks -y &&
 sudo apt install xorg -y &&
+sudo apt install feh
 sudo rm -rf /home/l/.config/i3/config &&
 cd /home/l/.config/i3/ &&
+sudo apt-get install unzip -y &&
+sudo rm -rf ./* &&
 sudo wget https://paulorochacode.github.io/Costumization/i3blocks.zip &&
-sudo apt install unzip -y &&
-sudo unzip i3blocks.zip -Ay && 
+unzip i3blocks.zip &&
+sudo rm -rf i3blocks.zip &&
 sudo wget https://paulorochacode.github.io/Costumization/config &&
 sudo rm -rf /etc/i3blocks.conf &&
 cd /etc/ &&
-sudo wget https://paulorochacode.github.io/Costumization/i3blocks.conf &&
+sudo wget https://paulorochacode.github.io/Costumization/VMi3blocks.conf/i3blocks.conf &&
 sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
-sudo mv fsociety.jpg /usr/share/pixmaps/fsociety.jpg &&
-sudo feh  --bg-scale /usr/share/pixmaps/fsociety.jpg &&
+mv fsociety.jpg /usr/share/pixmaps/fsociety.jpg &&
+sudo feh  --bg-scale /usr/share/pixmaps/fsociety.jpg && 
+sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
+mv fsociety.jpg /usr/share/pixmaps/fsociety.jpg &&
+sudo feh  --bg-scale /usr/share/pixmaps/fsociety.jpg
 
 ## Utilities
 
