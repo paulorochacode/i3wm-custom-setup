@@ -8,8 +8,8 @@ sudo apt-get install wget -y &&
 mkdir /home/l/Security &&
 mkdir /home/l/Security/Iptables &&
 cd /home/l/Security/Iptables &&
-sudo wget https://paulorochacode.github.io/Costumization/iptablesRules &&
-sudo iptables-restore < iptablesRules &&
+sudo wget https://paulorochacode.github.io/Costumization/iptables-desktop-lenovo &&
+sudo iptables-restore < iptables-desktop-lenovo &&
 sudo apt-get install iptables-persistent -y &&
 
 ## Updates
