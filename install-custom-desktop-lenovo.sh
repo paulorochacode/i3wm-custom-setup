@@ -87,6 +87,7 @@ EndSection
 
 EOF
 &&
+sudo sh -c "echo 'blacklist uvcvideo' >> /etc/modprobe.d/blacklist.conf" &&
 ## Bootloader
 
 echo "installing Bootloader..."
