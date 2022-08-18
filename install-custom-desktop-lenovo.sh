@@ -3,15 +3,25 @@
 
 ## Firewall
 
-echo "installing Firewall..."
-sudo apt-get install iptables -y &&
-sudo apt-get install wget -y &&
-mkdir /home/l/Security &&
-mkdir /home/l/Security/Iptables &&
-cd /home/l/Security/Iptables &&
-sudo wget https://paulorochacode.github.io/Costumization/iptables-desktop-lenovo &&
-sudo iptables-restore < iptables-desktop-lenovo &&
-sudo apt-get install iptables-persistent -y &&
+#UFW
+sudo apt install ufw -y &&
+sudo ufw default DENY incoming &&
+sudo ufw default DENY outgoing &&
+sudo ufw allow out 53 &&
+sudo ufw allow out 80 &&
+sudo ufw allow out 443 &&
+sudo ufw enable &&
+
+#Iptables
+#echo "installing Firewall..."
+#sudo apt-get install iptables -y &&
+#sudo apt-get install wget -y &&
+#mkdir /home/l/Security &&
+#mkdir /home/l/Security/Iptables &&
+#cd /home/l/Security/Iptables &&
+#sudo wget https://paulorochacode.github.io/Costumization/iptables-desktop-lenovo &&
+#sudo iptables-restore < iptables-desktop-lenovo &&
+#sudo apt-get install iptables-persistent -y &&
 
 ## Updates
 
@@ -40,7 +50,7 @@ echo "installing Video..."
 sudo apt install i3 -y &&
 sudo apt install i3blocks -y &&
 sudo apt install xorg -y &&
-sudo apt install feh
+sudo apt install feh -y &&
 sudo rm -rf /home/l/.config/i3/config &&
 cd /home/l/.config/i3/ &&
 sudo apt-get install unzip -y &&
