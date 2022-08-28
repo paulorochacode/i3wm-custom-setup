@@ -91,12 +91,26 @@
     </h4></br>
 
    <h3>Kernel compilation</h3>
+    <h4>
       sudo apt install linux-source && </br>
+      #download the debian kernel
       cd /usr/src && </br>
       sudo tar -xvf linux-source-4.19.tar.xz && </br>
       cd linux-source-4.19 && </br>
-      sudo && </br>
-    <h4>
+      sudo make localmodconfig && </br>
+      #modules actually charged on system
+      #sudo make menuconfig && </br>
+      #console mode
+      #sudo make gconfig && </br>
+      #graphical mode
+      sudo make && </br>
+      #compile the kernel
+      sudo make modules_install && </br>
+      #compile the kernel modules
+      sudo make install && </br>
+      sudo grub-install </br>
+      #if on gentoo download and compile the grub from emerge
+    </h4>
       
     </h4></br>
 
