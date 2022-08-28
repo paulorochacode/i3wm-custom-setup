@@ -78,16 +78,26 @@
     <h3>ly</h3>
 
     <h4>
-      sudo apt install build-essential && </br>
-      sudo apt install libpam0g-dev && </br>
-      sudo apt install libxcb-xkb-dev && </br>
-      sudo apt install git && </br>
+      sudo apt install build-essential -y && </br>
+      sudo apt install libpam0g-dev -y && </br>
+      sudo apt install libxcb-xkb-dev -y && </br>
+      sudo apt install git -y && </br>
       sudo git clone --recurse-submodules https://github.com/nullgemm/ly && </br>
       cd ly && </br>
       sudo make && </br>
       sudo make install && </br>
       sudo systemctl enable ly.service -f && </br>
       sudo systemctl disable getty@tty2.service -f
+    </h4></br>
+
+   <h3>Kernel compilation</h3>
+      sudo apt install linux-source && </br>
+      cd /usr/src && </br>
+      sudo tar -xvf linux-source-4.19.tar.xz && </br>
+      cd linux-source-4.19 && </br>
+      sudo && </br>
+    <h4>
+      
     </h4></br>
 
 </body>
