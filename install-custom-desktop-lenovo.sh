@@ -62,18 +62,19 @@ sudo rm -rf /etc/i3blocks.conf &&
 cd /etc/ &&
 sudo wget https://paulorochacode.github.io/Costumization/i3blocks.conf &&
 sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
+sudo wget https://paulorochacode.github.io/Costumization/wallpapers/black-wallpaper.jpg &&
 mv fsociety.jpg /usr/share/pixmaps/fsociety.jpg &&
-sudo feh  --bg-scale /usr/share/pixmaps/fsociety.jpg &&
+sudo feh  --bg-scale /usr/share/pixmaps/black-wallpaper.jpg &&
 
 ## Utilities
 
 echo "installing Utilities..."
 sudo apt install net-tools -y &&
 sudo apt install feh -y &&
-sudo apt install gnome-terminal -y &&
+sudo apt install xfce4-terminal -y &&
 sudo apt install maim -y &&
 sudo apt install slop -y &&
-sudo sh -c "echo 'blacklist uvcvideo' >> /etc/modprobe.d/blacklist.conf" &&
+sudo sh -c "echo 'list uvcvideo' >> /etc/modprobe.d/blacklist.conf" &&
 
 ## Bootloader
 
