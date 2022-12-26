@@ -1,5 +1,7 @@
 #! /bin/bash 
 
+User = "r"
+
 ## Firewall
 
 #UFW
@@ -15,9 +17,9 @@
 #echo "installing Firewall..."
 #sudo apt-get install iptables -y &&
 #sudo apt-get install wget -y &&
-#mkdir /home/l/Security &&
-#mkdir /home/l/Security/Iptables &&
-#cd /home/l/Security/Iptables &&
+#mkdir /home/"$User"/Security &&
+#mkdir /home/"$User"/Security/Iptables &&
+#cd /home/"$User"/Security/Iptables &&
 #sudo wget https://paulorochacode.github.io/Costumization/iptables-desktop-lenovo &&
 #sudo iptables-restore < iptables-desktop-lenovo &&
 #sudo apt-get install iptables-persistent -y &&
@@ -50,8 +52,8 @@ sudo apt install i3 -y &&
 sudo apt install i3blocks -y &&
 sudo apt install xorg -y &&
 sudo apt install feh -y &&
-sudo rm -rf /home/l/.config/i3/config &&
-cd /home/l/.config/i3/ &&
+sudo rm -rf /home/"$User"/.config/i3/config &&
+cd /home/"$User"/.config/i3/ &&
 sudo apt-get install unzip -y &&
 sudo rm -rf ./* &&
 sudo wget https://paulorochacode.github.io/Costumization/i3blocks.zip &&
