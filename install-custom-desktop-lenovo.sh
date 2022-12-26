@@ -53,7 +53,7 @@ sudo apt install feh -y &&
 sudo rm -rf ~/.config/i3/config &&
 cd ~/.config/i3/ &&
 sudo apt-get install unzip -y &&
-sudo rm -rf ./* &&
+sudo rm -rf ./i3blocks &&
 sudo wget https://paulorochacode.github.io/Costumization/i3blocks.zip &&
 unzip i3blocks.zip &&
 sudo rm -rf i3blocks.zip &&
