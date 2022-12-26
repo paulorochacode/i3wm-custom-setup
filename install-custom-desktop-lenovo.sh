@@ -4,13 +4,13 @@
 ## Firewall
 
 #UFW
-sudo apt install ufw -y &&
-sudo ufw default DENY incoming &&
-sudo ufw default DENY outgoing &&
-sudo ufw allow out 53 &&
-sudo ufw allow out 80 &&
-sudo ufw allow out 443 &&
-sudo ufw enable &&
+#sudo apt install ufw -y &&
+#sudo ufw default DENY incoming &&
+#sudo ufw default DENY outgoing &&
+#sudo ufw allow out 53 &&
+#sudo ufw allow out 80 &&
+#sudo ufw allow out 443 &&
+#sudo ufw enable &&
 
 #Iptables
 #echo "installing Firewall..."
