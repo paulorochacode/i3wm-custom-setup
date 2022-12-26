@@ -64,9 +64,6 @@ cd /etc/ &&
 sudo wget https://paulorochacode.github.io/Costumization/i3blocks.conf &&
 sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
 mv fsociety.jpg /usr/share/pixmaps/fsociety.jpg &&
-sudo feh  --bg-scale /usr/share/pixmaps/fsociety.jpg && 
-sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
-mv fsociety.jpg /usr/share/pixmaps/fsociety.jpg &&
 sudo feh  --bg-scale /usr/share/pixmaps/fsociety.jpg &&
 
 ## Utilities
@@ -77,16 +74,6 @@ sudo apt install feh -y &&
 sudo apt install gnome-terminal -y &&
 sudo apt install maim -y &&
 sudo apt install slop -y &&
-sudo mkdir -p /etc/X11/xorg.conf.d && sudo tee <<'EOF' /etc/X11/xorg.conf.d/90-touchpad.conf 1> /dev/null
-Section "InputClass"
-        Identifier "touchpad"
-        MatchIsTouchpad "on"
-        Driver "libinput"
-        Option "Tapping" "on"
-EndSection
-
-EOF
-&&
 sudo sh -c "echo 'blacklist uvcvideo' >> /etc/modprobe.d/blacklist.conf" &&
 
 ## Bootloader
