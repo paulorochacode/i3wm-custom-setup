@@ -1,4 +1,4 @@
-#! /bin/bash 
+#! /bin/bash
 
 ## Firewall
 
@@ -64,6 +64,7 @@ sudo wget https://paulorochacode.github.io/Costumization/i3blocks.conf &&
 sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
 sudo wget https://paulorochacode.github.io/Costumization/wallpapers/black-wallpaper.jpg &&
 mv fsociety.jpg /usr/share/pixmaps/fsociety.jpg &&
+mv black-wallpaper.jpg /usr/share/pixmaps/black-wallpaper.jpg &&
 sudo feh  --bg-scale /usr/share/pixmaps/black-wallpaper.jpg &&
 
 ## Utilities
