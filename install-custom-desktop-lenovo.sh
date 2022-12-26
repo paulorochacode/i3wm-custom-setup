@@ -25,7 +25,7 @@ sudo ufw enable &&
 
 ## Updates
 
-echo "installing Sistem updates..."
+echo "installing System updates..."
 sudo apt update -y &&
 sudo apt upgrade -y &&
 sudo apt-get update -y &&
@@ -88,18 +88,20 @@ EndSection
 EOF
 &&
 sudo sh -c "echo 'blacklist uvcvideo' >> /etc/modprobe.d/blacklist.conf" &&
+
 ## Bootloader
 
-echo "installing Bootloader..."
-sudo apt install build-essential -y &&
-sudo apt install libpam0g-dev -y &&
-sudo apt install libxcb-xkb-dev -y &&
-sudo apt install git -y &&
-sudo git clone --recurse-submodules https://github.com/nullgemm/ly &&
-cd ly &&
-sudo make &&
-sudo make install &&
-sudo systemctl enable ly.service -f &&
-sudo systemctl disable getty@tty2.service -f &&
-sudo reboot 
+sudo apt install gdm3 -y &&
 
+#echo "installing Bootloader..."
+#sudo apt install build-essential -y &&
+#sudo apt install libpam0g-dev -y &&
+#sudo apt install libxcb-xkb-dev -y &&
+#sudo apt install git -y &&
+#sudo git clone --recurse-submodules https://github.com/nullgemm/ly &&
+#cd ly &&
+#sudo make &&
+#sudo make install &&
+#sudo systemctl enable ly.service -f &&
+#sudo systemctl disable getty@tty2.service -f &&
+sudo reboot
