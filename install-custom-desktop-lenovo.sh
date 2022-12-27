@@ -1,95 +1,127 @@
 #! /bin/bash
 
-## Firewall
+echo "Which user would you like to install in?"
+read User
 
-#UFW
-#sudo apt install ufw -y &&
-#sudo ufw default DENY incoming &&
-#sudo ufw default DENY outgoing &&
-#sudo ufw allow out 53 &&
-#sudo ufw allow out 80 &&
-#sudo ufw allow out 443 &&
-#sudo ufw enable &&
+UFWsimple(){
+    echo "__________________________________________________________"
+    echo "installing UFW simple..."
+    sudo apt install ufw -y &&
+    sudo ufw default DENY incoming &&
+    sudo ufw default DENY outgoing &&
+    sudo ufw allow out 53 &&
+    sudo ufw allow out 80 &&
+    sudo ufw allow out 443 &&
+    sudo ufw enable &&
+    sudo ufw reload
+}
 
-#Iptables
-#echo "installing Firewall..."
-#sudo apt-get install iptables -y &&
-#sudo apt-get install wget -y &&
-#mkdir ~/Security &&
-#mkdir ~/Security/Iptables &&
-#cd ~/Security/Iptables &&
-#sudo wget https://paulorochacode.github.io/Costumization/iptables-desktop-lenovo &&
-#sudo iptables-restore < iptables-desktop-lenovo &&
-#sudo apt-get install iptables-persistent -y &&
+IptablesSimple(){
+    "__________________________________________________________"
+    echo "installing Iptables simple..."
+    sudo apt-get install iptables -y &&
+    sudo apt-get install wget -y &&
+    mkdir /home/"$User"/Security &&
+    mkdir /home/"$User"/Security/Iptables &&
+    sudo cd /home/"$User"/Security/Iptables &&
+    sudo wget https://paulorochacode.github.io/Costumization/iptables-desktop-lenovo &&
+    sudo iptables-restore < iptables-desktop-lenovo &&
+    sudo apt-get install iptables-persistent -y
+}
 
-## Updates
+Clamav(){
+    "__________________________________________________________"
+    echo "installing Antivirus Clam AV..."
+    sudo apt-get install clamav clamav-daemon -y 
+}
 
-echo "installing System updates..."
-sudo apt update -y &&
-sudo apt upgrade -y &&
-sudo apt-get update -y &&
-sudo apt-get upgrade -y &&
-sudo apt update -y &&
+Updates(){
+    "__________________________________________________________"
+    echo "installing System updates..."
+    sudo apt update -y &&
+    sudo apt upgrade -y &&
+    sudo apt-get update -y &&
+    sudo apt-get upgrade -y &&
+    sudo apt update -y
+}
 
-## Antivirus
+Audio(){
+    "__________________________________________________________"
+    echo "installing Audio..."
+    sudo apt remove pipewire* --purge -y &&
+    sudo apt remove alsa* --purge -y &&
+    sudo apt install pulseaudio -y
+}
 
-echo "installing Antivirus..."
-sudo apt-get install clamav clamav-daemon -y &&
+Video(){ 
+    "__________________________________________________________"
+    echo "installing Video..."
+    sudo apt install i3 -y &&
+    sudo apt install i3blocks -y &&
+    sudo apt install xorg -y &&
+    sudo apt install feh -y &&
+    sudo rm -rf /home/"$User"/.config/i3/config &&
+    cd /home/"$User"/.config/i3/ &&
+    sudo apt-get install unzip -y &&
+    sudo rm -rf ./i3blocks &&
+    sudo wget https://paulorochacode.github.io/Costumization/i3blocks.zip &&
+    unzip i3blocks.zip &&
+    sudo rm -rf i3blocks.zip &&
+    sudo wget https://paulorochacode.github.io/Costumization/config &&
+    sudo rm -rf /etc/i3blocks.conf &&
+    cd /etc/ &&
+    sudo wget https://paulorochacode.github.io/Costumization/i3blocks.conf &&
+    cd /usr/share/pixmaps &&
+    sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
+    sudo wget https://paulorochacode.github.io/Costumization/wallpapers/black-wallpaper.jpg &&
+    sudo feh  --bg-scale /usr/share/pixmaps/black-wallpaper.jpg
+}
 
-## Audio
+Utilities(){
+    "__________________________________________________________"
+    echo "installing Utilities..."
+    sudo apt install net-tools -y &&
+    sudo apt install feh -y &&
+    sudo apt install xfce4-terminal -y &&
+    sudo apt install maim -y &&
+    sudo apt install slop -y &&
+    sudo sh -c "echo 'list uvcvideo' >> /etc/modprobe.d/blacklist.conf" 
+}
 
-echo "installing Audio..."
-sudo apt remove pipewire* --purge -y &&
-sudo apt remove alsa* --purge -y &&
-sudo apt install pulseaudio -y &&
+LoginManager(){
+    "__________________________________________________________"
+    echo "installing LoginManager..."
+    
+    sudo apt install gdm3 -y
+    #sudo apt install build-essential -y &&
+    #sudo apt install libpam0g-dev -y &&
+    #sudo apt install libxcb-xkb-dev -y &&
+    #sudo apt install git -y &&
+    #sudo git clone --recurse-submodules https://github.com/nullgemm/ly &&
+    #cd ly &&
+    #sudo make &&
+    #sudo make install &&
+    #sudo systemctl enable ly.service -f &&
+    #sudo systemctl disable getty@tty2.service -f 
+}
 
-## Video
+#### SEC
 
-echo "installing Video..."
-sudo apt install i3 -y &&
-sudo apt install i3blocks -y &&
-sudo apt install xorg -y &&
-sudo apt install feh -y &&
-sudo rm -rf ~/.config/i3/config &&
-cd ~/.config/i3/ &&
-sudo apt-get install unzip -y &&
-sudo rm -rf ./i3blocks &&
-sudo wget https://paulorochacode.github.io/Costumization/i3blocks.zip &&
-unzip i3blocks.zip &&
-sudo rm -rf i3blocks.zip &&
-sudo wget https://paulorochacode.github.io/Costumization/config &&
-sudo rm -rf /etc/i3blocks.conf &&
-cd /etc/ &&
-sudo wget https://paulorochacode.github.io/Costumization/i3blocks.conf &&
-sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
-sudo wget https://paulorochacode.github.io/Costumization/wallpapers/black-wallpaper.jpg &&
-mv fsociety.jpg /usr/share/pixmaps/fsociety.jpg &&
-mv black-wallpaper.jpg /usr/share/pixmaps/black-wallpaper.jpg &&
-sudo feh  --bg-scale /usr/share/pixmaps/black-wallpaper.jpg &&
+UFWsimple
+#IptablesSimple
+Clamav
 
-## Utilities
 
-echo "installing Utilities..."
-sudo apt install net-tools -y &&
-sudo apt install feh -y &&
-sudo apt install xfce4-terminal -y &&
-sudo apt install maim -y &&
-sudo apt install slop -y &&
-sudo sh -c "echo 'list uvcvideo' >> /etc/modprobe.d/blacklist.conf" &&
+#### User
 
-## Bootloader
+#Audio
+Video
+#Utilities
 
-sudo apt install gdm3 -y &&
 
-#echo "installing Bootloader..."
-#sudo apt install build-essential -y &&
-#sudo apt install libpam0g-dev -y &&
-#sudo apt install libxcb-xkb-dev -y &&
-#sudo apt install git -y &&
-#sudo git clone --recurse-submodules https://github.com/nullgemm/ly &&
-#cd ly &&
-#sudo make &&
-#sudo make install &&
-#sudo systemctl enable ly.service -f &&
-#sudo systemctl disable getty@tty2.service -f &&
+#### SO
+
+Updates
+#LoginManager
+
 sudo reboot
