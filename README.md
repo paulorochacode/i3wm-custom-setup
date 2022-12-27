@@ -9,3 +9,6 @@ sudo wget https://paulorochacode.github.io/Costumization/install-custom-desktop-
 sudo chmod a+x ./install-custom-desktop-lenovo.sh &&</br>
 sudo ./install-custom-desktop-lenovo.sh</br>
 
+to do</br>
+1-intruduce compiled kernels</br>
+2-test vm version</br>
