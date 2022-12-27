@@ -15,3 +15,4 @@ to do</br>
 3-improve sec rules</br>
 4-fix the touch command</br>
 5-increase the borders of the windows</br>
+6-improve commands to resize and move the windows</br>
