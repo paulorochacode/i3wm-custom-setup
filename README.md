@@ -1,4 +1,4 @@
-Ubuntu costumization: </br>
+Ubuntu/Debian minimal costumization: </br>
 
 (need to test)
 sudo wget https://paulorochacode.github.io/Costumization/vm-install-custom.sh &&</br>
@@ -12,3 +12,6 @@ sudo ./install-custom-desktop-lenovo.sh</br>
 to do</br>
 1-intruduce compiled kernels</br>
 2-test vm version</br>
+3-improve sec rules</br>
+4-fix the touch command</br>
+5-increase the borders of the windows</br>
