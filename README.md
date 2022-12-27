@@ -1,5 +1,6 @@
 Ubuntu costumization: </br>
 
+(need to test)
 sudo wget https://paulorochacode.github.io/Costumization/vm-install-custom.sh &&</br>
 sudo chmod a+x ./vm-install-custom.sh &&</br>
 sudo ./vm-install-custom.sh</br>
