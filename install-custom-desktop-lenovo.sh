@@ -62,6 +62,7 @@ Video(){
     sudo apt install feh -y &&
     sudo apt install unzip -y &&
     sudo apt-get install libavcodec-extra libav-tools -y &&
+    sudo apt install ubuntu-restricted-extras -y &&
     sudo rm -rf /home/"$User"/.config/i3/config &&
     cd /home/"$User"/.config/i3/ &&
     sudo apt-get install unzip -y &&
