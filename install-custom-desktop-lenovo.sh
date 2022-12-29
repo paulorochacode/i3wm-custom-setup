@@ -17,7 +17,7 @@ UFWsimple(){
 }
 
 IptablesSimple(){
-    "__________________________________________________________"
+    echo "__________________________________________________________"
     echo "installing Iptables simple..."
     sudo apt-get install iptables -y &&
     sudo apt-get install wget -y &&
@@ -30,13 +30,13 @@ IptablesSimple(){
 }
 
 Clamav(){
-    "__________________________________________________________"
+    echo "__________________________________________________________"
     echo "installing Antivirus Clam AV..."
     sudo apt-get install clamav clamav-daemon -y 
 }
 
 Updates(){
-    "__________________________________________________________"
+    echo "__________________________________________________________"
     echo "installing System updates..."
     sudo apt update -y &&
     sudo apt upgrade -y &&
@@ -46,20 +46,21 @@ Updates(){
 }
 
 Audio(){
-    "__________________________________________________________"
+    echo "__________________________________________________________"
     echo "installing Audio..."
     sudo apt remove pipewire* --purge -y &&
     sudo apt remove alsa* --purge -y &&
     sudo apt install pulseaudio -y
 }
 
-Video(){ 
-    "__________________________________________________________"
+Video(){
+    echo "__________________________________________________________"
     echo "installing Video..."
     sudo apt install i3 -y &&
     sudo apt install i3blocks -y &&
     sudo apt install xorg -y &&
     sudo apt install feh -y &&
+    sudo apt install unzip -y &&
     sudo rm -rf /home/"$User"/.config/i3/config &&
     cd /home/"$User"/.config/i3/ &&
     sudo apt-get install unzip -y &&
@@ -78,18 +79,27 @@ Video(){
 }
 
 Utilities(){
-    "__________________________________________________________"
+    echo "__________________________________________________________"
     echo "installing Utilities..."
+    sudo apt install unzip -y &&
     sudo apt install net-tools -y &&
     sudo apt install feh -y &&
     sudo apt install xfce4-terminal -y &&
     sudo apt install maim -y &&
     sudo apt install slop -y &&
-    sudo sh -c "echo 'list uvcvideo' >> /etc/modprobe.d/blacklist.conf" 
+    sudo apt install firefox -y &&
+    sudo apt install keepassxc -y &&
+    sudo apt install nautilus -y &&
+    sudo apt install gnome-disk-utility -y &&
+    sudo apt install snapd -y &&
+    sudo apt snap install code --classic &&
+
+    #mute the mic/cam
+    sudo sh -c "echo 'list uvcvideo' >> /etc/modprobe.d/blacklist.conf"
 }
 
 LoginManager(){
-    "__________________________________________________________"
+    echo "__________________________________________________________"
     echo "installing LoginManager..."
     
     sudo apt install gdm3 -y
@@ -102,7 +112,7 @@ LoginManager(){
     #sudo make &&
     #sudo make install &&
     #sudo systemctl enable ly.service -f &&
-    #sudo systemctl disable getty@tty2.service -f 
+    #sudo systemctl disable getty@tty2.service -f
 }
 
 #### SEC
@@ -114,14 +124,14 @@ Clamav
 
 #### User
 
-#Audio
+Audio
 Video
-#Utilities
+Utilities
 
 
 #### SO
 
 Updates
-#LoginManager
+LoginManager
 
-sudo reboot
+#sudo reboot
