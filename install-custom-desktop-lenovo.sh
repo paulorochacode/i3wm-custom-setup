@@ -71,6 +71,7 @@ Video(){
     sudo apt-get install libavcodec-extra libav-tools -y &&
     sudo apt install ffmpeg -y &&
     sudo apt install ubuntu-restricted-extras -y &&
+    sudo apt install xbacklight -y &&
     sudo rm -rf /home/"$User"/.config/i3/config &&
     cd /home/"$User"/.config/i3/ &&
     sudo apt-get install unzip -y &&
@@ -86,6 +87,7 @@ Video(){
     sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
     sudo wget https://paulorochacode.github.io/Costumization/wallpapers/black-wallpaper.jpg &&
     sudo feh  --bg-scale /usr/share/pixmaps/black-wallpaper.jpg
+
 }
 
 Utilities(){
