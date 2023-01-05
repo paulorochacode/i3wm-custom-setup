@@ -50,11 +50,14 @@ Updates(){
 }
 
 Audio(){
+    sudo apt update -y &&
     echo "__________________________________________________________"
     echo "installing Audio..."
     sudo apt remove pipewire* --purge -y &&
     sudo apt remove alsa* --purge -y &&
-    sudo apt install pulseaudio -y
+    sudo apt install pulseaudio -y &&
+    sudo aṕt install sudo apt install ffmpeg -y
+    sudo apt-get install libavcodec-extra libav-tools -y
 }
 
 Video(){
@@ -66,6 +69,7 @@ Video(){
     sudo apt install feh -y &&
     sudo apt install unzip -y &&
     sudo apt-get install libavcodec-extra libav-tools -y &&
+    sudo apt install ffmpeg -y &&
     sudo apt install ubuntu-restricted-extras -y &&
     sudo rm -rf /home/"$User"/.config/i3/config &&
     cd /home/"$User"/.config/i3/ &&
