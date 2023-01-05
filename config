@@ -32,20 +32,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
+exec --no-startup-id ufw enable
 exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-scale /usr/share/pixmaps/black-wallpaper.jpg
 exec --no-startup-id xrandr --output Virtual1 --mode 1360x768
-
-#touch(error)
-#exec --no-startup-id sudo mkdir -p /etc/X11/xorg.conf.d && sudo tee <<'EOF' /etc/X11/xorg.conf.d/90-touchpad.conf 1> /dev/null
-#Section "InputClass"
-#        Identifier "touchpad"
-#        MatchIsTouchpad "on"
-#        Driver "libinput"
-#        Option "Tapping" "on"
-#EndSection
-#
-#EOF
 
 
 # Use pactl to adjust volume in PulseAudio.
