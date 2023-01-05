@@ -13,6 +13,14 @@ sudo wget https://paulorochacode.github.io/Costumization/install-custom-desktop-
 sudo chmod a+x ./install-custom-desktop-lenovo.sh &&</br>
 sudo ./install-custom-desktop-lenovo.sh</br>
 
+problems with audio: </br></br>
+sudo apt install snapd -y &&
+sudo snap install pulseaudio &&
+sudo apt install ffmpeg -y </br>
+
+alsa
+
+
 Need edit and take out the '#' of you want to install</br>
 ex: sudo nano ./install-custom-desktop-lenovo.sh</br>
 
