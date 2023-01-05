@@ -56,7 +56,7 @@ Audio(){
     sudo apt remove pipewire* --purge -y &&
     sudo apt remove alsa* --purge -y &&
     sudo apt install pulseaudio -y &&
-    sudo aṕt install sudo apt install ffmpeg -y
+    sudo aṕt install sudo apt install ffmpeg -y &&
     sudo apt-get install libavcodec-extra libav-tools -y
 }
 
@@ -107,7 +107,7 @@ Utilities(){
     sudo apt install htop -y &&
     sudo apt install tldr -y &&
     sudo apt install ncdu -y &&
-    sudo apt install network-manager -y
+    sudo apt install network-manager -y &&
     sudo snap install code --classic &&
     sudo wget https://paulorochacode.github.io/Costumization/touch-pad.sh &&
     sudo chmod a+x ./touch-pad.sh &&
@@ -138,7 +138,7 @@ LoginManager(){
 UFWsimple
 #IptablesSimple
 Clamav
-
+#MuteMic
 
 #### User
 
