@@ -91,10 +91,10 @@ Utilities(){
     sudo apt install slop -y &&
     sudo apt install firefox -y &&
     sudo apt install keepassxc -y &&
-    sudo apt install nautilus -y &&
-    sudo apt install gnome-disk-utility -y &&
+    sudo apt install thunar -y &&
+    sudo apt install gparted -y &&
     sudo apt install snapd -y &&
-    sudo apt snap install code --classic &&
+    sudo apt snap install code --classic
 
     #mute the mic/cam
     sudo sh -c "echo 'list uvcvideo' >> /etc/modprobe.d/blacklist.conf"
@@ -104,7 +104,7 @@ LoginManager(){
     echo "__________________________________________________________"
     echo "installing LoginManager..."
     
-    sudo apt install gdm3 -y
+    #sudo apt install gdm3 -y
     #sudo apt install build-essential -y &&
     #sudo apt install libpam0g-dev -y &&
     #sudo apt install libxcb-xkb-dev -y &&
@@ -134,6 +134,6 @@ Utilities
 #### SO
 
 Updates
-LoginManager
+#LoginManager
 
 #sudo reboot
