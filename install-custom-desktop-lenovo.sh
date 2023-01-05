@@ -29,6 +29,10 @@ IptablesSimple(){
     sudo apt-get install iptables-persistent -y
 }
 
+MuteMic(){
+    sudo sh -c "echo 'list uvcvideo' >> /etc/modprobe.d/blacklist.conf"
+}
+
 Clamav(){
     echo "__________________________________________________________"
     echo "installing Antivirus Clam AV..."
@@ -94,10 +98,16 @@ Utilities(){
     sudo apt install thunar -y &&
     sudo apt install gparted -y &&
     sudo apt install snapd -y &&
-    sudo apt snap install code --classic
-
-    #mute the mic/cam
-    sudo sh -c "echo 'list uvcvideo' >> /etc/modprobe.d/blacklist.conf"
+    sudo apt install htop -y &&
+    sudo apt install tldr -y &&
+    sudo apt install ncdu -y &&
+    sudo apt install network-manager -y
+    sudo apt snap install code --classic &&
+    sudo wget https://paulorochacode.github.io/Costumization/touch-pad.sh &&
+    sudo chmod a+x ./touch-pad.sh &&
+    sudo ./touch-pad.sh &&
+    sudo rm -rf ./touch-pad.sh
+    
 }
 
 LoginManager(){
