@@ -102,7 +102,7 @@ Utilities(){
     sudo apt install tldr -y &&
     sudo apt install ncdu -y &&
     sudo apt install network-manager -y
-    sudo apt snap install code --classic &&
+    sudo snap install code --classic &&
     sudo wget https://paulorochacode.github.io/Costumization/touch-pad.sh &&
     sudo chmod a+x ./touch-pad.sh &&
     sudo ./touch-pad.sh &&
