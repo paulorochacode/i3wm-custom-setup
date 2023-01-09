@@ -113,7 +113,6 @@ Utilities(){
     sudo chmod a+x ./touch-pad.sh &&
     sudo ./touch-pad.sh &&
     sudo rm -rf ./touch-pad.sh
-    
 }
 
 LoginManager(){
