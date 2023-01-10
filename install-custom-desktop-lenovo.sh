@@ -134,8 +134,8 @@ LoginManager(){
 }
 
 ScriptNoLoginManager(){
-    cd /home/"$User"
-    sudo rm -rf ./starti3
+    cd /home/"$User" &&
+    sudo rm -rf ./starti3 &&
     sudo wget https://github.com/paulorochacode/Costumization/starti3.sh
 }
 
