@@ -119,6 +119,7 @@ LoginManager(){
     echo "__________________________________________________________"
     echo "installing LoginManager..."
     
+    
     #sudo apt install gdm3 -y
     #sudo apt install build-essential -y &&
     #sudo apt install libpam0g-dev -y &&
@@ -130,6 +131,12 @@ LoginManager(){
     #sudo make install &&
     #sudo systemctl enable ly.service -f &&
     #sudo systemctl disable getty@tty2.service -f
+}
+
+ScriptNoLoginManager(){
+    cd /home/"$User"
+    sudo rm -rf ./starti3
+    sudo wget https://github.com/paulorochacode/Costumization/starti3.sh
 }
 
 #### SEC
@@ -150,5 +157,6 @@ Utilities
 
 Updates
 #LoginManager
+ScriptNoLoginManager
 
 #sudo reboot
