@@ -5,10 +5,12 @@ sudo wget https://paulorochacode.github.io/Costumization/vm-install-custom.sh &&
 sudo chmod a+x ./vm-install-custom.sh &&</br>
 sudo ./vm-install-custom.sh</br>
 
-(working on ubuntu minimal 20.04,</br> 
-            classic ubuntu 20.04,</br>
-            classic ubuntu 22.04.)</br></br>
-            
+#(working on ubuntu minimal 20.04,</br> 
+#            classic ubuntu 20.04,</br>
+#            classic ubuntu 22.04.)</br></br>
+ 
+(need to test)</br>
+
 sudo wget https://paulorochacode.github.io/Costumization/install-custom-desktop-lenovo.sh &&</br>
 sudo chmod a+x ./install-custom-desktop-lenovo.sh &&</br>
 sudo ./install-custom-desktop-lenovo.sh</br>
