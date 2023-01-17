@@ -120,8 +120,10 @@ LoginManager(){
     echo "__________________________________________________________"
     echo "installing LoginManager..."
     
-    
     #sudo apt install gdm3 -y
+    
+    sudo apt install lightdm-gtk-greeter -y
+    
     #sudo apt install build-essential -y &&
     #sudo apt install libpam0g-dev -y &&
     #sudo apt install libxcb-xkb-dev -y &&
@@ -134,7 +136,7 @@ LoginManager(){
     #sudo systemctl disable getty@tty2.service -f
 }
 
-ScriptNoLoginManager(){
+ScriptNoLoginManageri3(){
     cd /home/"$User" &&
     sudo rm -rf ./starti3 &&
     sudo wget https://github.com/paulorochacode/Costumization/starti3.sh
@@ -158,6 +160,6 @@ Utilities
 
 Updates
 #LoginManager
-ScriptNoLoginManager
+#ScriptNoLoginManageri3
 
 #sudo reboot
