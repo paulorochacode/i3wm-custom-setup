@@ -98,7 +98,8 @@ Utilities(){
     sudo apt install feh -y &&
     sudo apt install xfce4-terminal -y &&
     sudo apt install maim -y &&
-    sudo apt install slop -y &&
+    #sudo apt install slop -y &&
+    sudo apt install xfce4-screenshooter -y &&
     sudo apt install firefox -y &&
     sudo apt install keepassxc -y &&
     sudo apt install thunar -y &&
