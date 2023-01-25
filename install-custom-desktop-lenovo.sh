@@ -111,10 +111,10 @@ Utilities(){
     sudo apt install network-manager -y &&
     sudo apt install synapse -y &&
     sudo snap install code --classic &&
-    sudo wget https://paulorochacode.github.io/Costumization/touch-pad.sh &&
-    sudo chmod a+x ./touch-pad.sh &&
-    sudo ./touch-pad.sh &&
-    sudo rm -rf ./touch-pad.sh
+    sudo wget https://paulorochacode.github.io/Costumization/sub-scripts/touch-pad.sh &&
+    sudo chmod a+x ./sub-scripts/touch-pad.sh &&
+    sudo ./sub-scripts/touch-pad.sh &&
+    sudo rm -rf ./sub-scripts/touch-pad.sh
 }
 
 LoginManager(){
@@ -139,7 +139,7 @@ LoginManager(){
 
 ScriptNoLoginManageri3(){
     cd /home/"$User" &&
-    sudo rm -rf ./starti3 &&
+    sudo rm -rf ./sub-scripts/starti3.sh &&
     sudo wget https://github.com/paulorochacode/Costumization/sub-scripts/starti3.sh
 }
 
