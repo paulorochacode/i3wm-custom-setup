@@ -24,7 +24,7 @@ IptablesSimple(){
     mkdir /home/"$User"/Security &&
     mkdir /home/"$User"/Security/Iptables &&
     sudo cd /home/"$User"/Security/Iptables &&
-    sudo wget https://paulorochacode.github.io/Costumization/iptables-desktop-lenovo &&
+    sudo wget https://paulorochacode.github.io/Costumization/lenovo-sec/iptables-desktop-lenovo &&
     sudo iptables-restore < iptables-desktop-lenovo &&
     sudo apt-get install iptables-persistent -y
 }
@@ -76,13 +76,13 @@ Video(){
     cd /home/"$User"/.config/i3/ &&
     sudo apt-get install unzip -y &&
     sudo rm -rf ./i3blocks &&
-    sudo wget https://paulorochacode.github.io/Costumization/i3blocks.zip &&
+    sudo wget https://paulorochacode.github.io/Costumization/lenovo-i3blocks-conf/i3blocks.zip &&
     unzip i3blocks.zip &&
     sudo rm -rf i3blocks.zip &&
-    sudo wget https://paulorochacode.github.io/Costumization/config &&
+    sudo wget https://paulorochacode.github.io/Costumization/lenovo-i3blocks-conf/config &&
     sudo rm -rf /etc/i3blocks.conf &&
     cd /etc/ &&
-    sudo wget https://paulorochacode.github.io/Costumization/i3blocks.conf &&
+    sudo wget https://paulorochacode.github.io/Costumization/lenovo-i3blocks-conf/i3blocks.conf &&
     cd /usr/share/pixmaps &&
     sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
     sudo wget https://paulorochacode.github.io/Costumization/wallpapers/black-wallpaper.jpg &&
