@@ -1,5 +1,7 @@
 Ubuntu/Debian minimal costumization: </br>
 
+<img src="https://github.com/paulorochacode/Costumization/blob/main/images/costumization.png?raw=true">
+
 <!--(need to test)</br></br>
 -->
 (working on ubuntu minimal 20.04,</br> 
