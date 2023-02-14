@@ -8,20 +8,25 @@ Ubuntu/Debian minimal costumization: </br>
             classic ubuntu 20.04,</br>
             classic ubuntu 22.04.)</br>
 ```bash
-sudo wget https://paulorochacode.github.io/Costumization/installers/vm-install-custom.sh &&</br>
-sudo chmod a+x ./vm-install-custom.sh &&</br>
-sudo ./vm-install-custom.sh</br>
+sudo wget https://paulorochacode.github.io/Costumization/installers/vm-install-custom.sh ;
+sudo chmod a+x ./vm-install-custom.sh ;
+sudo ./vm-install-custom.sh
 ```
-
+</br>
 (need to test)</br>
 
-sudo wget https://paulorochacode.github.io/Costumization/installers/install-custom-desktop-lenovo.sh &&</br>
-sudo chmod a+x ./install-custom-desktop-lenovo.sh &&</br>
-sudo ./install-custom-desktop-lenovo.sh</br>
+```bash
+sudo wget https://paulorochacode.github.io/Costumization/installers/install-custom-desktop-lenovo.sh ;
+sudo chmod a+x ./install-custom-desktop-lenovo.sh ;
+sudo ./install-custom-desktop-lenovo.sh
+```
+</br>
+Need edit and take out the '#' of you want to install
 
-
-Need edit and take out the '#' of you want to install</br>
-ex: sudo nano ./install-custom-desktop-lenovo.sh</br>
+</br>
+```bash
+ex: sudo nano ./install-custom-desktop-lenovo.sh ;
+```
 
 to do</br>
 1-intruduce compiled kernels</br>
