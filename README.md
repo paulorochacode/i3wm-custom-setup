@@ -22,10 +22,10 @@ sudo ./install-custom-desktop-lenovo.sh
 ```
 </br>
 Need edit and take out the '#' of you want to install
+</br>ex: 
 
-</br>
 ```bash
-ex: sudo nano ./install-custom-desktop-lenovo.sh ;
+sudo nano ./install-custom-desktop-lenovo.sh
 ```
 
 to do</br>
