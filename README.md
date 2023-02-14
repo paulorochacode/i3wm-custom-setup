@@ -7,11 +7,11 @@ Ubuntu/Debian minimal costumization: </br>
 (working on ubuntu minimal 20.04,</br> 
             classic ubuntu 20.04,</br>
             classic ubuntu 22.04.)</br>
-´´´bash
+```bash
 sudo wget https://paulorochacode.github.io/Costumization/installers/vm-install-custom.sh &&</br>
 sudo chmod a+x ./vm-install-custom.sh &&</br>
 sudo ./vm-install-custom.sh</br>
-´´´
+```
 
 (need to test)</br>
 
