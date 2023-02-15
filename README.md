@@ -32,6 +32,5 @@ to do</br>
 1-intruduce compiled kernels</br>
 2-test vm version</br>
 3-improve sec rules</br>
-4-increase the borders of the windows</br>
-5-improve commands to resize and move the windows</br>
-6-to fix bookmarks application
+4-improve commands to resize and move the windows</br>
+5-to fix bookmarks application
