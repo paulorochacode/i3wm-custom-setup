@@ -133,8 +133,9 @@ LoginManager(){
     #cd ly &&
     #sudo make &&
     #sudo make install &&
-    #sudo systemctl enable ly.service -f &&
-    #sudo systemctl disable getty@tty2.service -f
+    #sudo systemctl disable getty@tty2.service -f &&
+    #sudo systemctl enable ly.service -f
+    
 }
 
 ScriptNoLoginManageri3(){
