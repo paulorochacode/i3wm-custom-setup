@@ -132,7 +132,7 @@ LoginManager(){
     #sudo git clone --recurse-submodules https://github.com/nullgemm/ly &&
     #cd ly &&
     #sudo make &&
-    #sudo make install &&
+    #make install installsystemd &&
     #sudo systemctl disable getty@tty2.service -f &&
     #sudo systemctl enable ly.service -f
     
