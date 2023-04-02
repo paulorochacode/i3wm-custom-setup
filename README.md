@@ -32,5 +32,7 @@ to do</br>
 1-intruduce compiled kernels</br>
 2-test vm version</br>
 3-improve sec rules</br>
-4-improve commands to resize and move the windows</br>
-5-to fix bookmarks application
+4-improve commands to resize and move the windows </br>
+5-to fix bookmarks application </br>
+6-homyzsh-autosuggestions</br>
+7-alias</br>
