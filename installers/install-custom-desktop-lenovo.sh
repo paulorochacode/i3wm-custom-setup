@@ -6,6 +6,7 @@ read User
 UFWsimple(){
     echo "__________________________________________________________"
     echo "installing UFW simple..."
+    sudo apt autoremove nc -y ;
     sudo apt install ufw -y &&
     sudo ufw default DENY incoming &&
     sudo ufw default DENY outgoing &&
@@ -14,6 +15,20 @@ UFWsimple(){
     sudo ufw allow out 443 &&
     sudo ufw enable &&
     sudo ufw reload
+}
+
+Firewalld(){
+    echo "__________________________________________________________"
+    echo "installing Firewalld simple..."
+    sudo apt autoremove nc -y ;
+    sudo apt install firewalld -y ;
+    sudo firewall-cmd --remove-service=dhcpv6-client --permanent ;
+    sudo firewall-cmd --remove-service=ssh --permanent ;
+    sudo firewall-cmd --add-service=https --permanent ;
+    sudo firewall-cmd --add-service=dns --permanent ;
+    sudo systemctl enable firewalld ;
+    sudo firewall-cmd --reload
+    
 }
 
 IptablesSimple(){
