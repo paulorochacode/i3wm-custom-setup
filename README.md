@@ -1,3 +1,5 @@
+Solution for slowers pcs.</br>
+
 Ubuntu/Debian minimal costumization: </br>
 
 <img src="https://github.com/paulorochacode/Costumization/blob/main/images/costumization.png?raw=true">
