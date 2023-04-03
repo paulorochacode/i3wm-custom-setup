@@ -2,7 +2,7 @@ Solution for slowers pcs.</br>
 
 Ubuntu/Debian minimal costumization: </br>
 
-<img src="https://github.com/paulorochacode/Costumization/blob/main/images/costumization.png?raw=true">
+<img src="https://github.com/paulorochacode/i3wm-custom-setup/blob/main/images/costumization.png?raw=true">
 
 <!--(need to test)</br></br>
 -->
@@ -10,7 +10,7 @@ Ubuntu/Debian minimal costumization: </br>
             classic ubuntu 20.04,</br>
             classic ubuntu 22.04.)</br>
 ```bash
-sudo wget https://paulorochacode.github.io/Costumization/installers/vm-install-custom.sh ;
+sudo wget https://paulorochacode.github.io/i3wm-custom-setup/installers/vm-install-custom.sh ;
 sudo chmod a+x ./vm-install-custom.sh ;
 sudo ./vm-install-custom.sh
 ```
@@ -18,7 +18,7 @@ sudo ./vm-install-custom.sh
 (need to test)</br>
 
 ```bash
-sudo wget https://paulorochacode.github.io/Costumization/installers/install-custom-desktop-lenovo.sh ;
+sudo wget https://paulorochacode.github.io/i3wm-custom-setup/installers/install-custom-desktop-lenovo.sh ;
 sudo chmod a+x ./install-custom-desktop-lenovo.sh ;
 sudo ./install-custom-desktop-lenovo.sh
 ```
