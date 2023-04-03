@@ -3,6 +3,16 @@
 echo "Which user would you like to install in?"
 read User
 
+FirewallVerificator(){
+    echo "__________________________________________________________"
+    echo "installing firewall verificator..."
+    sudo cd /etc/i3
+    mkdir /home/"$User"/Security
+    mkdir /home/"$User"/Security/FirewallVerificator
+    cd /home/"$User"/Security/FirewallVerificator
+    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/lenovo-sec/firewall-verificator.py
+}
+
 UFWsimple(){
     echo "__________________________________________________________"
     echo "installing UFW simple..."
@@ -38,7 +48,7 @@ IptablesSimple(){
     sudo apt-get install wget -y &&
     mkdir /home/"$User"/Security &&
     mkdir /home/"$User"/Security/Iptables &&
-    sudo cd /home/"$User"/Security/Iptables &&
+    cd /home/"$User"/Security/Iptables &&
     sudo wget https://paulorochacode.github.io/i3wm-custom-setup/lenovo-sec/iptables-desktop-lenovo &&
     sudo iptables-restore < iptables-desktop-lenovo &&
     sudo apt-get install iptables-persistent -y
