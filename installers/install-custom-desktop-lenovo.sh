@@ -6,11 +6,11 @@ read User
 FirewallVerificator(){
     echo "__________________________________________________________"
     echo "installing firewall verificator..."
-    sudo cd /etc/i3
-    mkdir /home/"$User"/Security
-    mkdir /home/"$User"/Security/FirewallVerificator
-    cd /home/"$User"/Security/FirewallVerificator
-    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/lenovo-sec/firewall-verificator.py
+    mkdir /home/"$User"/Security ;
+    mkdir /home/"$User"/Security/FirewallVerificator ;
+    cd /home/"$User"/Security/FirewallVerificator ;
+    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/lenovo-sec/firewall-verificator.py.zip ;
+    sudo unzip ./firewall-verificator.py.zip 
 }
 
 UFWsimple(){
@@ -99,12 +99,13 @@ Video(){
     sudo apt install xbacklight -y &&
     sudo rm -rf /home/"$User"/.config/i3/config &&
     cd /home/"$User"/.config/i3/ &&
-    sudo apt-get install unzip -y &&
-    sudo rm -rf ./i3blocks &&
-    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/lenovo-i3blocks-conf/config &&
-    sudo rm -rf /etc/i3blocks.conf &&
-    cd /etc/ &&
-    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/lenovo-i3blocks-conf/i3blocks.conf &&
+    sudo apt-get install unzip -y ;
+    cd /home/"$User"/.config/i3
+    sudo wget https://github.com/paulorochacode/i3wm-custom-setup/raw/main/lenovo-i3blocks-conf/config-i3blocks.zip ;
+    sudo unzip config-i3blocks.zip ;
+    cd /etc
+    wget https://github.com/paulorochacode/i3wm-custom-setup/raw/main/lenovo-i3blocks-conf/i3blocks.conf.zip ;
+    sudo unzip ./i3blocks.conf.zip &&
     cd /usr/share/pixmaps &&
     sudo wget https://paulorochacode.github.io/i3wm-custom-setup/wallpapers/fsociety.jpg &&
     sudo wget https://paulorochacode.github.io/i3wm-custom-setup /wallpapers/black-wallpaper.jpg &&
@@ -168,6 +169,8 @@ ScriptNoLoginManageri3(){
 
 #### SEC
 
+Firewalld
+FirewallVerificator
 UFWsimple
 #IptablesSimple
 Clamav
