@@ -39,7 +39,7 @@ IptablesSimple(){
     mkdir /home/"$User"/Security &&
     mkdir /home/"$User"/Security/Iptables &&
     sudo cd /home/"$User"/Security/Iptables &&
-    sudo wget https://paulorochacode.github.io/Costumization/lenovo-sec/iptables-desktop-lenovo &&
+    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/lenovo-sec/iptables-desktop-lenovo &&
     sudo iptables-restore < iptables-desktop-lenovo &&
     sudo apt-get install iptables-persistent -y
 }
@@ -91,16 +91,13 @@ Video(){
     cd /home/"$User"/.config/i3/ &&
     sudo apt-get install unzip -y &&
     sudo rm -rf ./i3blocks &&
-    sudo wget https://paulorochacode.github.io/Costumization/lenovo-i3blocks-conf/i3blocks.zip &&
-    unzip i3blocks.zip &&
-    sudo rm -rf i3blocks.zip &&
-    sudo wget https://paulorochacode.github.io/Costumization/lenovo-i3blocks-conf/config &&
+    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/lenovo-i3blocks-conf/config &&
     sudo rm -rf /etc/i3blocks.conf &&
     cd /etc/ &&
-    sudo wget https://paulorochacode.github.io/Costumization/lenovo-i3blocks-conf/i3blocks.conf &&
+    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/lenovo-i3blocks-conf/i3blocks.conf &&
     cd /usr/share/pixmaps &&
-    sudo wget https://paulorochacode.github.io/Costumization/wallpapers/fsociety.jpg &&
-    sudo wget https://paulorochacode.github.io/Costumization/wallpapers/black-wallpaper.jpg &&
+    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/wallpapers/fsociety.jpg &&
+    sudo wget https://paulorochacode.github.io/i3wm-custom-setup /wallpapers/black-wallpaper.jpg &&
     sudo feh  --bg-scale /usr/share/pixmaps/black-wallpaper.jpg
 
 }
@@ -126,7 +123,7 @@ Utilities(){
     sudo apt install network-manager -y &&
     sudo apt install synapse -y &&
     sudo snap install code --classic &&
-    sudo wget https://paulorochacode.github.io/Costumization/sub-scripts/touch-pad.sh &&
+    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/sub-scripts/touch-pad.sh &&
     sudo chmod a+x ./sub-scripts/touch-pad.sh &&
     sudo ./sub-scripts/touch-pad.sh &&
     sudo rm -rf ./sub-scripts/touch-pad.sh
@@ -156,7 +153,7 @@ LoginManager(){
 ScriptNoLoginManageri3(){
     cd /home/"$User" &&
     sudo rm -rf ./sub-scripts/starti3.sh &&
-    sudo wget https://github.com/paulorochacode/Costumization/sub-scripts/starti3.sh
+    sudo wget https://github.com/paulorochacode/i3wm-custom-setup/sub-scripts/starti3.sh
 }
 
 #### SEC
