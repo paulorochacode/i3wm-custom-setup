@@ -18,18 +18,20 @@ sudo ./vm-install-custom.sh
 (need to test)</br>
 
 ```bash
-sudo wget https://paulorochacode.github.io/i3wm-custom-setup/installers/install-custom-desktop-lenovo.sh ;
-sudo chmod a+x ./install-custom-desktop-lenovo.sh ;
-sudo ./install-custom-desktop-lenovo.sh
+sudo wget https://paulorochacode.github.io/i3wm-custom-setup/installers/install-custom-desktop.sh ;
+sudo chmod a+x ./install-custom-desktop.sh ;
+sudo ./install-custom-desktop.sh
 ```
 </br>
 Need edit and take out the '#' of you want to install
 </br>ex: 
 
 ```bash
-sudo nano ./install-custom-desktop-lenovo.sh
+sudo nano ./install-custom-desktop.sh
 ```
 
+
+<!--
 to do</br>
 1-intruduce compiled kernels</br>
 2-test vm version</br>
@@ -38,3 +40,4 @@ to do</br>
 5-to fix bookmarks application </br>
 6-homyzsh-autosuggestions</br>
 7-alias</br>
+-->

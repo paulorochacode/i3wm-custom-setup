@@ -9,7 +9,7 @@ FirewallVerificator(){
     mkdir /home/"$User"/Security ;
     mkdir /home/"$User"/Security/FirewallVerificator ;
     cd /home/"$User"/Security/FirewallVerificator ;
-    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/lenovo-sec/firewall-verificator.py.zip ;
+    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/sec/firewall-verificator.py.zip ;
     sudo unzip ./firewall-verificator.py.zip 
 }
 
@@ -49,7 +49,7 @@ IptablesSimple(){
     mkdir /home/"$User"/Security &&
     mkdir /home/"$User"/Security/Iptables &&
     cd /home/"$User"/Security/Iptables &&
-    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/lenovo-sec/iptables-desktop-lenovo &&
+    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/sec/iptables-desktop-lenovo &&
     sudo iptables-restore < iptables-desktop-lenovo &&
     sudo apt-get install iptables-persistent -y
 }
