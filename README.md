@@ -30,7 +30,12 @@ Need edit and take out the '#' of you want to install
 sudo nano ./install-custom-desktop.sh
 ```
 
-
+ <div>
+  <h2>Contribuitions</br></h2>
+    <img align="center" alt="Postman" height="40" width="100" src="https://github.com/paulorochacode/readme-files/blob/main/contribution-blue.png?raw=true"></br></br>
+    <a> PIX    : paulorochacode@outlook.com <a/></br>
+    <a> Paypal : paulorochacode@outlook.com <a/></br>
+  </div>
 <!--
 to do</br>
 1-intruduce compiled kernels</br>
