@@ -10,7 +10,7 @@ Ubuntu/Debian minimal costumization: </br>
             classic ubuntu 20.04,</br>
             classic ubuntu 22.04.)</br>
 ```bash
-sudo wget https://paulorochacode.github.io/i3wm-custom-setup/installers/vm-install-custom.sh ;
+sudo wget https://github.com/paulorochacode/i3wm-custom-setup/archive/refs/heads/main.zip ;
 sudo chmod a+x ./vm-install-custom.sh ;
 sudo ./vm-install-custom.sh
 ```
