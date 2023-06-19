@@ -108,7 +108,7 @@ Video(){
     sudo unzip ./i3blocks.conf.zip &&
     cd /usr/share/pixmaps &&
     sudo wget https://paulorochacode.github.io/i3wm-custom-setup/wallpapers/fsociety.jpg &&
-    sudo wget https://paulorochacode.github.io/i3wm-custom-setup /wallpapers/black-wallpaper.jpg &&
+    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/wallpapers/black-wallpaper.jpg &&
     sudo feh  --bg-scale /usr/share/pixmaps/black-wallpaper.jpg
 }
 
