@@ -1,4 +1,4 @@
-Solution for slow pcs.</br>
+Solution for slower pcs.</br>
 
 Ubuntu/Debian minimal costumization: </br>
 
