@@ -4,11 +4,11 @@ Ubuntu/Debian minimal costumization: </br>
 
 <img src="https://github.com/paulorochacode/i3wm-custom-setup/blob/main/images/costumization.png?raw=true">
 
-<!--(need to test)</br></br>
--->
-(working on ubuntu minimal 20.04,</br> 
+(need to test)</br></br>
+<!--(working on ubuntu minimal 20.04,</br> 
             classic ubuntu 20.04,</br>
             classic ubuntu 22.04.)</br>
+-->
 ```bash
 sudo wget https://github.com/paulorochacode/i3wm-custom-setup/archive/refs/heads/main.zip ;
 sudo chmod a+x ./vm-install-custom.sh ;
