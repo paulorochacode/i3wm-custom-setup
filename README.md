@@ -11,8 +11,10 @@ Ubuntu/Debian minimal costumization: </br>
 -->
 ```bash
 sudo wget https://github.com/paulorochacode/i3wm-custom-setup/archive/refs/heads/main.zip ;
-sudo chmod a+x ./vm-install-custom.sh ;
-sudo ./vm-install-custom.sh
+sudo unzip ./main.zip ;
+cd ./i3wm-custom-setup-main/installers ;
+sudo chmod a+x ./install-custom-desktop.sh ;
+sudo ./install-custom-desktop.sh
 ```
 </br>
 (need to test)</br>
