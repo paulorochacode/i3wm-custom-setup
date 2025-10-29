@@ -6,10 +6,10 @@ read User
 FirewallVerificator(){
     echo "__________________________________________________________"
     echo "installing firewall verificator..."
-    mkdir /home/"$User"/Security ;
-    mkdir /home/"$User"/Security/FirewallVerificator ;
-    cd /home/"$User"/Security/FirewallVerificator ;
-    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/sec/firewall-verificator.py.zip ;
+    mkdir /home/"$User"/Security &&
+    mkdir /home/"$User"/Security/FirewallVerificator &&
+    cd /home/"$User"/Security/FirewallVerificator &&
+    sudo wget https://paulorochacode.github.io/i3wm-custom-setup/sec/firewall-verificator.py.zip &&
     sudo unzip ./firewall-verificator.py.zip 
 }
 
