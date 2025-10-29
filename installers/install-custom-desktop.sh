@@ -99,12 +99,12 @@ Video(){
     sudo apt install xbacklight -y &&
     sudo rm -rf /home/"$User"/.config/i3/config &&
     cd /home/"$User"/.config/i3/ &&
-    sudo apt-get install unzip -y ;
-    cd /home/"$User"/.config/i3 ;
-    sudo wget https://github.com/paulorochacode/i3wm-custom-setup/raw/main/lenovo-i3blocks-conf/config-i3blocks.zip ;
-    sudo unzip config-i3blocks.zip ;
-    cd /etc ;
-    wget https://github.com/paulorochacode/i3wm-custom-setup/raw/main/lenovo-i3blocks-conf/i3blocks.conf.zip ;
+    sudo apt-get install unzip -y &&
+    cd /home/"$User"/.config/i3 &&
+    sudo wget https://github.com/paulorochacode/i3wm-custom-setup/raw/main/lenovo-i3blocks-conf/config-i3blocks.zip &&
+    sudo unzip config-i3blocks.zip &&
+    cd /etc &&
+    wget https://github.com/paulorochacode/i3wm-custom-setup/raw/main/lenovo-i3blocks-conf/i3blocks.conf.zip &&
     sudo unzip ./i3blocks.conf.zip &&
     cd /usr/share/pixmaps &&
     sudo wget https://paulorochacode.github.io/i3wm-custom-setup/wallpapers/fsociety.jpg &&
